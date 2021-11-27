@@ -10,8 +10,8 @@ interface HobbyProps {
 export const Hobby: React.FC<HobbyProps> = ({ visible }) => {
   return (
     <div className="relative w-full overflow-hidden">
-      <Fade right when={visible}>
-        <StyledFadeRight className="flex w-full h-screen">Hello</StyledFadeRight>
+      <Fade bottom when={visible}>
+        <StyledFadeRight className="flex w-full h-screen large:bg-black-opacity-50">Hello</StyledFadeRight>
       </Fade>
     </div>
   );
