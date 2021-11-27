@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import { Hobby } from './containers/Hobby';
+import { Objective } from './containers/Objective';
 import { Information } from './containers/Information';
 import { Experience } from './containers/Experience';
+import { Hobby } from './containers/Hobby';
 
 const App: React.FC = () => {
   const [visible, setVisible] = React.useState<boolean>(false);
@@ -15,8 +16,9 @@ const App: React.FC = () => {
   return (
     <StyledWrapper className="bg-no-repeat bg-center bg-cover">
       <Information visible={visible} />
-      <Hobby visible={visible} />
+      <Objective visible={visible} />
       <Experience visible={visible} />
+      <Hobby visible={visible} />
     </StyledWrapper>
   );
 };

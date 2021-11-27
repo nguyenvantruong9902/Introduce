@@ -26,7 +26,7 @@ export const Information: React.FC<InformationProps> = ({ visible }) => {
                 <p className="text-3xl mb-8 font-bold">Contact Information</p>
                 <p>Nguyen Van Truong</p>
                 <p>Male</p>
-                <p>12/10/1999</p>
+                <p>Oct 12, 1999</p>
 
                 <div className="flex justify-center sm:items-center items-baseline">
                   <FaMapMarkerAlt className="mr-2 text-xl" />
