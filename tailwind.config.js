@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         black: {
-          'opacity-50': '#00000080',
+          'opacity-50': 'rgba(0, 0, 0, 0.5)',
         },
       },
       backgroundColor: (theme) => ({

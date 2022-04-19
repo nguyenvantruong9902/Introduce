@@ -14,7 +14,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <StyledWrapper className="bg-no-repeat bg-center bg-cover">
+    <StyledWrapper>
       <Information visible={visible} />
       <Objective visible={visible} />
       <Experience visible={visible} />
