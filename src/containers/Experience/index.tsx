@@ -8,18 +8,6 @@ import { WrapperExperience } from './Experience.styles';
 import 'react-vertical-timeline-component/style.min.css';
 
 export const timeLines = [
-  // {
-  //   date: '09/2017 - 12/2019',
-  //   title: 'Student',
-  //   works: [
-  //     'Learn Information Technology (Software Application)',
-  //     'I used 70% for practice and only 30% for theory all my time when I was in this college',
-  //     'I have done many projects. Such as Find Homestay',
-  //   ],
-  //   workLocation: 'FPT Polytechnic College',
-  //   address: 'Lien Chieu District, Da Nang',
-  //   icon: <FcGraduationCap />,
-  // },
   {
     date: '09/2020 - Present',
     title: 'ReactJS Developer',
@@ -95,21 +83,19 @@ export const Experience: React.FC<ExperienceProps> = ({ visible }) => {
             <li>I have done many projects. Such as Find Homestay</li>
             <ul className="list-disc pl-8">
               <li>
-                Backend: <br />
-                <a href="https://gitlab.com/nguyenvantruong9902/api-findhomestay">
-                  https://gitlab.com/nguyenvantruong9902/api-findhomestay
+                <a className="underline" href="https://gitlab.com/nguyenvantruong9902/api-findhomestay">
+                  Find Homestay API
                 </a>
               </li>
               <li>
-                Frontend: <br />
-                <a href="https://gitlab.com/nguyenvantruong9902/web-findhomestay">
-                  https://gitlab.com/nguyenvantruong9902/web-findhomestay
+                <a className="underline" href="https://gitlab.com/nguyenvantruong9902/web-findhomestay">
+                  Find Homestay WEB
                 </a>
               </li>
             </ul>
           </ul>
         </VerticalTimelineElement>
-        {timeLines.map((timeLine) => (
+        {timeLines.map((timeLine, index) => (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'rgba(0, 0, 0, 0.5)', color: 'white' }}
@@ -117,6 +103,7 @@ export const Experience: React.FC<ExperienceProps> = ({ visible }) => {
             date={timeLine.date}
             iconStyle={{ background: 'white' }}
             icon={timeLine.icon}
+            key={index}
           >
             <h3 className="font-bold mb-4">{timeLine.title}</h3>
             {timeLine.companies.map((company, index) => (

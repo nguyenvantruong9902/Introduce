@@ -16,10 +16,7 @@ export const Information: React.FC<InformationProps> = ({ visible }) => {
     <div className="flex justify-center relative w-full">
       <div className="absolute w-full">
         <Fade bottom when={visible}>
-          <StyledFadeLeft
-            className="h-screen bg-no-repeat large:bg-contain"
-            style={{ backgroundImage: `url(${Avatar})` }}
-          />
+          <StyledFadeLeft className="h-screen bg-no-repeat bg-contain" style={{ backgroundImage: `url(${Avatar})` }} />
         </Fade>
       </div>
 
