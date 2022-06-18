@@ -16,13 +16,16 @@ export const Information: React.FC<InformationProps> = ({ visible }) => {
     <div className="flex justify-center relative w-full">
       <div className="absolute w-full">
         <Fade bottom when={visible}>
-          <StyledFadeLeft className="h-screen bg-no-repeat bg-contain" style={{ backgroundImage: `url(${Avatar})` }} />
+          <StyledFadeLeft
+            className="h-screen bg-no-repeat bg-contain opacity-20 large:opacity-100"
+            style={{ backgroundImage: `url(${Avatar})` }}
+          />
         </Fade>
       </div>
 
       <div className="w-full overflow-hidden">
         <Fade top when={visible}>
-          <StyledFadeTop className="flex justify-center large:justify-end items-center large:h-screen large:bg-black-opacity-50 py-12">
+          <StyledFadeTop className="flex justify-center large:justify-end items-center large:min-h-screen large:bg-black-opacity-50 py-12">
             <Pulse when={visible} delay={1000}>
               <div className="text-white large:w-1/2 px-4 text-center text-lg">
                 <p className="text-3xl mb-8 font-bold">CONTACT INFORMATION</p>
